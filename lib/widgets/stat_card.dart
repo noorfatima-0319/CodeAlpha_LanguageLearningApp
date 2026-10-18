@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class StatCard extends StatelessWidget {
   final IconData icon; final String value, label; final Color color;
-  const StatCard(this.icon, this.value, this.label, this.color);
+  const StatCard(this.icon, this.value, this.label, this.color, {super.key});
   @override
   Widget build(BuildContext context) {
     final t = Theme.of(context).textTheme, cs = Theme.of(context).colorScheme;

@@ -95,7 +95,7 @@ class _QuizState extends State<QuizScreen> {
     final answered = picked != null;
     final isRight = o == q.ans, isWrong = answered && picked == j && !isRight;
     final color = answered && isRight
-        ? Colors.green.withOpacity(.22)
+        ? Colors.green.withValues(alpha: .22)
         : isWrong ? cs.errorContainer : cs.surfaceContainerHigh;
     final border = answered && isRight ? Colors.green : isWrong ? cs.error : Colors.transparent;
     return Padding(

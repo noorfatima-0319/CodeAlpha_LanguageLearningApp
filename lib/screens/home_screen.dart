@@ -47,10 +47,10 @@ class HomeScreen extends StatelessWidget {
             child: Row(children: [
               Expanded(
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                  Text('Word of the day', style: t.labelLarge?.copyWith(color: cs.onPrimary.withOpacity(.85))),
+                  Text('Word of the day', style: t.labelLarge?.copyWith(color: cs.onPrimary.withValues(alpha: .85))),
                   const SizedBox(height: 6),
                   Text(wotd[1], style: t.headlineMedium?.copyWith(color: cs.onPrimary)),
-                  Text('${wotd[0]}  •  ${wotd[2]}', style: t.bodyMedium?.copyWith(color: cs.onPrimary.withOpacity(.9))),
+                  Text('${wotd[0]}  •  ${wotd[2]}', style: t.bodyMedium?.copyWith(color: cs.onPrimary.withValues(alpha: .9))),
                 ]),
               ),
               Icon(Icons.auto_awesome_rounded, color: cs.onPrimary, size: 34),
